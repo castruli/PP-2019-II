@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="431.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pp2019.VentanaFXMLDocumentController">
+   <children>
+      <AnchorPane fx:id="paneTwittear" prefHeight="431.0" prefWidth="620.0" visible="false">
+         <children>
+            <TextArea fx:id="textTwit" layoutX="26.0" layoutY="85.0" onKeyReleased="#contar_caracteres" prefHeight="131.0" prefWidth="565.0">
+               <font>
+                  <Font size="18.0" />
+               </font></TextArea>
+            <Label layoutX="121.0" layoutY="28.0" text="tweet" />
+            <Label fx:id="contadorCaracteres" layoutX="527.0" layoutY="231.0" text="0/140" />
+            <Button layoutX="247.0" layoutY="248.0" mnemonicParsing="false" text="enviar o alguna weeasardsa" />
+            <Button fx:id="botonAtras" layoutX="26.0" layoutY="45.0" mnemonicParsing="false" onAction="#presionar_atras" text="Atras" />
+         </children>
+      </AnchorPane>
+      <HBox fx:id="hboxBotones" alignment="CENTER" layoutX="13.0" layoutY="57.0" prefHeight="290.0" prefWidth="591.0" spacing="75.0">
+         <children>
+            <Button fx:id="botonTweet" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" onAction="#presionar_twittear" />
+            <Button fx:id="botonRetweet" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" />
+            <Button fx:id="botonSpam" minHeight="100.0" minWidth="100.0" mnemonicParsing="false" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
